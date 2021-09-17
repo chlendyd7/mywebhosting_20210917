@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p{
+            counter-increment: rint;
+        }
+        p::before{
+            /* 내용.p태그에 들어갈 내용 */
+            content:counter(rint)".";
+        }
+        p::after{
+            content:"-"attr(data-page)" page";
+        }
+    </style>
+</head>
+<body>
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <p data-page="52">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vel. Deserunt quae, nemo et ut sunt accusantium nesciunt dolor illo quia ipsum ab alias impedit quo officia totam itaque id iusto assumenda quis quasi error tenetur quisquam? Officia, nulla adipisci! Earum, dolorum. Sit repudiandae deleniti iste laboriosam porro similique ducimus quod voluptate corporis ad itaque ipsa illo, assumenda, molestias repellat ea, ullam nesciunt? Alias temporibus expedita numquam? Odit consequatur cupiditate aperiam perferendis, accusamus beatae. Enim reiciendis quia inventore deserunt omnis tempora atque tenetur, nisi minima laudantium aliquid, rerum suscipit ipsum id sapiente, numquam eum nesciunt fuga corporis veniam repudiandae soluta.</p>
+    <p data-page="273">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis, vel. Deserunt quae, nemo et ut sunt accusantium nesciunt dolor illo quia ipsum ab alias impedit quo officia totam itaque id iusto assumenda quis quasi error tenetur quisquam? Officia, nulla adipisci! Earum, dolorum. Sit repudiandae deleniti iste laboriosam porro similique ducimus quod voluptate corporis ad itaque ipsa illo, assumenda, molestias repellat ea, ullam nesciunt? Alias temporibus expedita numquam? Odit consequatur cupiditate aperiam perferendis, accusamus beatae. Enim reiciendis quia inventore deserunt omnis tempora atque tenetur, nisi minima laudantium aliquid, rerum suscipit ipsum id sapiente, numquam eum nesciunt fuga corporis veniam repudiandae soluta.</p>
+    
+</body>
+</html>
